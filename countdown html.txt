@@ -1,0 +1,16 @@
+ <section class="countdown">
+   <div class="timer">
+    <b><p>access will be granted in t-</p></b>
+    <span><div class="counter">
+	<span><class="counter__time" span id="days"></span>
+	<span><class="counter__duration">days:</span>
+      </div></span>
+        <span><p class="counter__time" span id="hours"></p></span>
+        <span><p class="counter__duration">hours:</p></span>
+      </div></span>
+        <span><p class="counter__time" span id="minutes"></p></span>
+        <span><p class="counter__duration">minutes:</p></span>
+      </div></span>
+        <span><p class="counter__time" span id="seconds"></p>
+        <span><p class="counter__duration">seconds:</p>
+      </div></span>
