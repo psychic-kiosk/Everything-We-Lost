@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>logic&art</title>
+<style>
+/* Basic reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+    body {
+        font-family: Times New Roman;
+        background-color: #ffffff;
+        color: #131313;
+	line-height: 1.6;
+    }
+
+    header {
+        background: #ff7f00;
+        color: black;
+        padding: 1rem 0;
+        text-align: center;
+	position: static;
+	bottom: 50px;
+    }
+
+    nav {
+        background: #00827f;
+        padding: 0.5rem;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        margin: 0 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 1rem;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    button {
+        background: #483c32;
+        color: rgb(14, 13, 13);
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        background: #2c1608;
+    }
+
+    footer {
+        background: #00827f;
+        color: black;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+
+
+/* COUNTDOWN TIMER */
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.counter__time {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.counter__duration {
+  font-size: 0.9rem;
+}
+
+/* HELPERS */
+
+dots {
+  font-size: 20px;
+  color: #2c1608;
+  margin: -0.75rem;
+  padding: 0;
+  
+}
+
+</style>
+ 
+
+</head>
+<body>
+
+<header>
+    <h1>what are you doing here?</h1>
+    <h3>your guide isn't ready to begin</h3>
+    <section class="countdown">
+      <div class="timer">
+        <b><p>The journey begins in:</p></b>
+        <div class="counter">
+          <span><p class="counter__time" id="days"></p></span>
+          <span><p class="counter__duration">days</p></span>
+        </div>
+        <div class="counter">
+          <span><p class="counter__time" id="hours"></p></span>
+          <span><p class="counter__duration">hours</p></span>
+        </div>
+        <div class="counter">
+          <span><p class="counter__time" id="minutes"></p></span>
+          <span><p class="counter__duration">minutes</p></span>
+        </div>
+        <div class="counter">
+          <span><p class="counter__time" id="seconds"></p></span>
+          <span><p class="counter__duration">seconds</p></span>
+        </div>
+      </div>
+    </section>
+</header>
+
+
+ 
+<nav>
+    <a href="logic&art/home.html" target="_blank">Home</a>
+    <a href="#memories">Memories</a>
+    <a href="#database">Database</a>
+    <a href="about me/aboutme.html" target="_blank">About me</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Home</h2>
+        <p>i would welcome you to the Lost Woods but...</p>
+        <button onclick="showMessage()">Click Me</button>
+    </section>
+
+    <section id="memories" style="margin-top: 2rem;">
+        <h2>Memories</h2>
+        <p>your access will be denied</p>
+    </section>
+
+<section id="database" style="margin-top: 2rem;">
+        <h2>Database</h2>
+        <p>search to find the answers you seek.</p>
+    </section>
+
+    <section id="about me" style="margin-top: 2rem; color:#131313;">
+        <a href="about me/aboutme.html" target="_blank">
+        <h2>About Me</h2></a>
+        <p>the creator behind the magic</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Lost Woods Inc.</p>
+</footer>
+
+<script src="countdown.js"></script>
+</body>
+</html>
